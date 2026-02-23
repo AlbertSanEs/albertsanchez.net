@@ -1,59 +1,4 @@
-const SKILL_CATEGORIES = [
-  {
-    title: "Sistemas Operativos",
-    command: "ls /os/",
-    skills: [
-      { name: "Windows Server", level: 90 },
-      { name: "Red Hat Enterprise Linux", level: 85 },
-      { name: "Ubuntu / Debian", level: 80 },
-    ],
-  },
-  {
-    title: "Virtualizacion & Cloud",
-    command: "ls /virtualization/",
-    skills: [
-      { name: "VMware vSphere", level: 85 },
-      { name: "Hyper-V", level: 70 },
-      { name: "Docker", level: 65 },
-    ],
-  },
-  {
-    title: "Monitorizacion & SIEM",
-    command: "ls /monitoring/",
-    skills: [
-      { name: "SIEM (QRadar/Splunk)", level: 80 },
-      { name: "Nagios / Zabbix", level: 85 },
-      { name: "Grafana", level: 80 },
-    ],
-  },
-  {
-    title: "Networking & Seguridad",
-    command: "ls /network/",
-    skills: [
-      { name: "DNS / DHCP", level: 85 },
-      { name: "Firewalls (iptables)", level: 75 },
-      { name: "Active Directory", level: 85 },
-    ],
-  },
-  {
-    title: "Herramientas & Metodologias",
-    command: "ls /tools/",
-    skills: [
-      { name: "ServiceNow / Ticketing", level: 90 },
-      { name: "ITIL Framework", level: 80 },
-      { name: "Bash Scripting", level: 75 },
-    ],
-  },
-  {
-    title: "Seguridad Ofensiva/Defensiva",
-    command: "ls /security/",
-    skills: [
-      { name: "MITRE ATT&CK", level: 75 },
-      { name: "Incident Response", level: 80 },
-      { name: "Log Analysis", level: 85 },
-    ],
-  },
-]
+import { SKILL_CATEGORIES, ADDITIONAL_SKILLS } from "./data/skills-data"
 
 export function SkillsSection() {
   return (
@@ -104,14 +49,7 @@ export function SkillsSection() {
             <span className="text-terminal-green">$</span> cat /etc/more-skills.conf
           </div>
           <div className="flex flex-wrap gap-2">
-            {[
-              "PowerShell", "Python", "Ansible", "Terraform", "Git",
-              "CI/CD", "AWS Basics", "Backup & Recovery", "Disaster Recovery",
-              "Patch Management", "Vulnerability Assessment", "SSL/TLS",
-              "TCP/IP", "VPN", "Load Balancing", "Storage (SAN/NAS)",
-              "Documentacion Tecnica", "Trabajo en Equipo", "Resolucion de Problemas",
-              "Comunicacion Efectiva",
-            ].map((skill) => (
+            {ADDITIONAL_SKILLS.map((skill) => (
               <span
                 key={skill}
                 className="px-2.5 py-1 text-[10px] rounded-md bg-secondary/50 text-muted-foreground border border-border hover:text-terminal-green hover:border-terminal-green/30 transition-colors"
