@@ -28,7 +28,7 @@ export function HeroSection() {
           <div className="absolute -inset-1 rounded-full bg-terminal-green/20 blur-md" />
           <div className="relative w-32 h-32 rounded-full overflow-hidden border-2 border-terminal-green/40">
             <Image
-              src="/images/albert-avatar.jpg"
+              src="/images/albert-avatar.png"
               alt="Albert Sanchez Escobar"
               fill
               className="object-cover"
