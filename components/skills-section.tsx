@@ -49,7 +49,14 @@ export function SkillsSection() {
             <span className="text-terminal-green">$</span> cat /etc/more-skills.conf
           </div>
           <div className="flex flex-wrap gap-2">
-            {ADDITIONAL_SKILLS.map((skill) => (
+            {[
+              "PowerShell", "Python", "Ansible", "Terraform", "Git",
+              "CI/CD", "AWS Basics", "Backup & Recovery", "Disaster Recovery",
+              "Patch Management", "Vulnerability Assessment", "SSL/TLS",
+              "TCP/IP", "VPN", "Load Balancing", "Storage (SAN/NAS)",
+              "Documentacion Tecnica", "Trabajo en Equipo", "Resolucion de Problemas",
+              "Comunicacion Efectiva",
+            ].map((skill) => (
               <span
                 key={skill}
                 className="px-2.5 py-1 text-[10px] rounded-md bg-secondary/50 text-muted-foreground border border-border hover:text-terminal-green hover:border-terminal-green/30 transition-colors"

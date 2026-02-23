@@ -14,9 +14,9 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     title: "Sistemas Operativos",
     command: "ls /os/",
     skills: [
-      { name: "Windows Server", level: 90 },
-      { name: "Red Hat Enterprise Linux", level: 85 },
-      { name: "Ubuntu / Debian", level: 80 },
+      { name: "Debian", level: 95 },
+      { name: "RHEL", level: 85 },
+      { name: "Windows Server", level: 75 }
     ],
   },
   {
