@@ -5,45 +5,6 @@ import { ChevronRight, Terminal, Shield, Users } from "lucide-react"
 
 const TIMELINE = [
   {
-    role: "SysOps",
-    period: "Oct 2020 - Ago 2022",
-    duration: "1 ano 11 meses",
-    icon: Terminal,
-    color: "terminal-green",
-    command: "systemctl start career.service",
-    description:
-      "Integrante del Departamento de Operaciones de Sistemas Informaticos, enfocado en la supervision y gestion tecnica de infraestructuras criticas para entidades bancarias.",
-    tasks: [
-      "Monitorizacion continua de la infraestructura informatica para detectar anomalias y garantizar la disponibilidad de los servicios",
-      "Analisis y revision de graficas, metricas y alertas para el control del rendimiento de sistemas",
-      "Diagnostico tecnico de incidencias de primer y segundo nivel, aplicando procedimientos de resolucion o escalado",
-      "Ejecucion de intervenciones programadas o de emergencia, asegurando la minima afectacion al entorno productivo",
-      "Colaboracion con equipos tecnicos para asegurar la estabilidad operativa de los entornos productivos y de contingencia",
-    ],
-    skills: ["Windows", "RHEL", "VMware", "Nagios", "Grafana", "ServiceNow", "Active Directory", "DNS", "DHCP"],
-  },
-  {
-    role: "Coordinador de Turno & SysOps",
-    period: "Ago 2022 - May 2023",
-    duration: "10 meses",
-    icon: Users,
-    color: "terminal-cyan",
-    command: "sudo promote --role=coordinator",
-    description:
-      "Responsable de coordinar y supervisar las operaciones durante el turno, asegurando el cumplimiento de los estandares de calidad y facilitando la comunicacion entre equipos y departamentos.",
-    tasks: [
-      "Supervision y asignacion de tareas al personal para optimizar los procesos operativos durante el turno",
-      "Deteccion, priorizacion y resolucion de incidencias, garantizando una respuesta eficiente y oportuna",
-      "Mantenimiento de una comunicacion fluida con los diferentes departamentos y elaboracion de informes de actividad",
-      "Supervision del correcto funcionamiento de los procedimientos operativos, identificando mejoras y colaborando en su implementacion",
-      "Asistencia y acompanamiento al equipo durante el turno, fomentando un entorno colaborativo y orientado a resultados",
-    ],
-    skills: [
-      "Windows", "RHEL", "Liderazgo", "Gestion de equipos", "ITIL", "Comunicacion",
-      "Resolucion de incidencias", "Reporting", "Coordinacion",
-    ],
-  },
-  {
     role: "Analista de Ciberseguridad SOC L1",
     period: "Mar 2023 - Presente",
     duration: "+3 anos",
@@ -64,10 +25,49 @@ const TIMELINE = [
       "Playbooks", "Log Analysis", "Documentacion tecnica",
     ],
   },
+  {
+    role: "Coordinador de Turno & SysOps",
+    period: "Ago 2022 - May 2023",
+    duration: "10 meses",
+    icon: Users,
+    color: "terminal-cyan",
+    command: "sudo promote --role=coordinator",
+    description:
+        "Responsable de coordinar y supervisar las operaciones durante el turno, asegurando el cumplimiento de los estandares de calidad y facilitando la comunicacion entre equipos y departamentos.",
+    tasks: [
+      "Supervision y asignacion de tareas al personal para optimizar los procesos operativos durante el turno",
+      "Deteccion, priorizacion y resolucion de incidencias, garantizando una respuesta eficiente y oportuna",
+      "Mantenimiento de una comunicacion fluida con los diferentes departamentos y elaboracion de informes de actividad",
+      "Supervision del correcto funcionamiento de los procedimientos operativos, identificando mejoras y colaborando en su implementacion",
+      "Asistencia y acompanamiento al equipo durante el turno, fomentando un entorno colaborativo y orientado a resultados",
+    ],
+    skills: [
+      "Windows", "RHEL", "Liderazgo", "Gestion de equipos", "ITIL", "Comunicacion",
+      "Resolucion de incidencias", "Reporting", "Coordinacion",
+    ],
+  },
+  {
+    role: "SysOps",
+    period: "Oct 2020 - Ago 2022",
+    duration: "1 ano 11 meses",
+    icon: Terminal,
+    color: "terminal-green",
+    command: "systemctl start career.service",
+    description:
+        "Integrante del Departamento de Operaciones de Sistemas Informaticos, enfocado en la supervision y gestion tecnica de infraestructuras criticas para entidades bancarias.",
+    tasks: [
+      "Monitorizacion continua de la infraestructura informatica para detectar anomalias y garantizar la disponibilidad de los servicios",
+      "Analisis y revision de graficas, metricas y alertas para el control del rendimiento de sistemas",
+      "Diagnostico tecnico de incidencias de primer y segundo nivel, aplicando procedimientos de resolucion o escalado",
+      "Ejecucion de intervenciones programadas o de emergencia, asegurando la minima afectacion al entorno productivo",
+      "Colaboracion con equipos tecnicos para asegurar la estabilidad operativa de los entornos productivos y de contingencia",
+    ],
+    skills: ["Windows", "RHEL", "VMware", "Nagios", "Grafana", "ServiceNow", "Active Directory", "DNS", "DHCP"],
+  }
 ]
 
 export function ExperisSection() {
-  const [expandedIndex, setExpandedIndex] = useState<number>(2)
+  const [expandedIndex, setExpandedIndex] = useState<number>(0)
 
   return (
     <section id="experis" className="relative px-6 py-24">
@@ -94,7 +94,7 @@ export function ExperisSection() {
             {TIMELINE.map((item, index) => {
               const Icon = item.icon
               const isExpanded = expandedIndex === index
-              const isCurrent = index === TIMELINE.length - 1
+              const isCurrent = index === 0
 
               return (
                 <div key={index} className="relative pl-12 md:pl-14">
