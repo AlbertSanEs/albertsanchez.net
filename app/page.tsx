@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/about-section"
 import { ExperisSection } from "@/components/experis-section"
 import { SkillsSection } from "@/components/skills-section"
 import { EducationSection } from "@/components/education-section"
+import { CVSection } from "@/components/cv-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 
@@ -28,6 +29,10 @@ export default function Home() {
         <hr className="border-border" />
       </div>
       <EducationSection />
+      <div className="mx-auto max-w-5xl px-6">
+        <hr className="border-border" />
+      </div>
+      <CVSection />
       <div className="mx-auto max-w-5xl px-6">
         <hr className="border-border" />
       </div>
