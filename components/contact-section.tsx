@@ -67,11 +67,11 @@ export function ContactSection() {
                 {[
                   {
                     title: "Trayectoria demostrada",
-                    desc: "+5 anos de crecimiento continuo en Experis, desde SysOps hasta Analista SOC.",
+                    desc: "+5 años de crecimiento continuo en Experis, desde SysOps hasta DevSecOps.",
                   },
                   {
                     title: "Versatilidad operativa",
-                    desc: "Experiencia real en sistemas, redes, coordinacion de equipos y ciberseguridad.",
+                    desc: "Experiencia real en sistemas, redes, coordinacion de equipos, ciberseguridad y CI/CD.",
                   },
                   {
                     title: "Entornos criticos",
@@ -79,7 +79,7 @@ export function ContactSection() {
                   },
                   {
                     title: "En constante formacion",
-                    desc: "Cursando Ingenieria de Telecomunicaciones en la UOC. Nunca deja de aprender.",
+                    desc: "Cursando Ingeniería de Telecomunicaciones en la UOC y en proceso de obtención de nuevas certificaciones.",
                   },
                 ].map((item) => (
                   <li key={item.title} className="flex items-start gap-2">

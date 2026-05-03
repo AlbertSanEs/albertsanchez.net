@@ -8,8 +8,8 @@ const NAV_ITEMS = [
   { id: "experis", label: "~/experis" },
   { id: "skills", label: "~/skills" },
   { id: "education", label: "~/education" },
-  { id: "contact", label: "~/contact" },
-  { id: "cv", label: "~/cv" }
+  { id: "cv", label: "~/cv" },
+  { id: "contact", label: "~/contact" }
 ]
 
 export function Navbar() {

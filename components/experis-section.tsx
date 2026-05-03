@@ -1,13 +1,34 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronRight, Terminal, Shield, Users } from "lucide-react"
+import { ChevronRight, Terminal, Shield, Users, GitBranch } from "lucide-react"
 
 const TIMELINE = [
   {
+    role: "Especialista DevSecOps",
+    period: "Abr 2026 - Presente",
+    //duration: "+3 años",
+    icon: GitBranch,
+    color: "chart-4",
+    command: "ssh devsecops@platform --level=specialist",
+    description:
+      "Especialista DevSecOps con experiencia integrando seguridad en procesos de automatización, pipelines CI/CD y operaciones de infraestructura. Enfoque en mejorar la seguridad del ciclo de vida del software, reforzar controles y optimizar flujos técnicos en entornos críticos.",
+    tasks: [
+      "Implementación de controles de seguridad en pipelines CI/CD",
+      "Automatización de validaciones, escaneos y procesos de hardening",
+      "Gestión de secretos, identidades y políticas de acceso",
+      "Revisión de configuraciones, compliance y seguridad en entornos cloud/on‑prem",
+      "Colaboración con equipos de desarrollo y operaciones para integrar prácticas DevSecOps",
+    ],
+    skills: [
+      "CI/CD Security", "Automation", "IaC", "Secrets Management", "Vulnerability Scanning",
+      "Hardening", "Compliance", "GitLab CI/GitHub Actions",
+    ],
+  },
+  {
     role: "Analista de Ciberseguridad SOC L1",
     period: "Mar 2023 - Presente",
-    duration: "+3 anos",
+    duration: "+3 años",
     icon: Shield,
     color: "chart-4",
     command: "ssh soc@security-ops --level=analyst",
@@ -49,7 +70,7 @@ const TIMELINE = [
   {
     role: "SysOps",
     period: "Oct 2020 - Ago 2022",
-    duration: "1 ano 11 meses",
+    duration: "1 año 11 meses",
     icon: Terminal,
     color: "terminal-green",
     command: "systemctl start career.service",
@@ -82,7 +103,7 @@ export function ExperisSection() {
           </h2>
         </div>
         <p className="text-xs text-muted-foreground mb-12 ml-6">
-          Experis Espana (ManpowerGroup) -- Full-time -- 5 anos 5 meses -- Barcelona, Hybrid
+          Experis Espana (ManpowerGroup) -- Full-time -- 5 años 5 meses -- Barcelona, Hybrid
         </p>
 
         {/* ASCII-style tree connector */}
@@ -191,7 +212,7 @@ export function ExperisSection() {
             <span className="text-terminal-green">$</span> git log --oneline --author=albert | wc -l
           </div>
           <p className="font-serif text-sm text-foreground leading-relaxed">
-            De operador de sistemas a analista de ciberseguridad: una evolucion natural dentro del ecosistema IT.
+            De operador de sistemas a especialista en DevSecOps: una evolucion natural dentro del ecosistema IT.
             Cada rol en Experis ha construido sobre el anterior, sumando{" "}
             <span className="text-terminal-green">vision tecnica</span>,{" "}
             <span className="text-terminal-cyan">capacidad de liderazgo</span> y{" "}

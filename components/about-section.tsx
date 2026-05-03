@@ -14,16 +14,13 @@ export function AboutSection() {
         <div className="grid md:grid-cols-3 gap-6">
           <div className="md:col-span-2 rounded-lg border border-border bg-card p-6">
             <p className="font-serif text-sm leading-relaxed text-muted-foreground mb-4">
-              Profesional de infraestructura IT con mas de 5 anos de experiencia en{" "}
+              Profesional de infraestructura IT con mas de 5 años de experiencia en{" "}
               <span className="text-foreground">operaciones de sistemas</span>,{" "}
               <span className="text-foreground">ciberseguridad</span> y{" "}
               <span className="text-foreground">coordinacion de equipos</span> en entornos criticos 24/7.
             </p>
             <p className="font-serif text-sm leading-relaxed text-muted-foreground mb-4">
-              Desde mis inicios como SysOps monitorizando infraestructuras bancarias, he evolucionado
-              hasta liderar turnos operativos y especializarme en analisis SOC. Mi recorrido en{" "}
-              <span className="text-terminal-green">Experis Espana</span> refleja una trayectoria de
-              crecimiento constante, asumiendo cada vez mas responsabilidad y complejidad tecnica.
+              Mi trayectoria ha evolucionado <span className="text-foreground">desde funciones SysOps </span>en infraestructuras bancarias hasta <span className="text-foreground">DevSecOps</span>, incorporando prácticas de automatización y mejora continua de procesos de seguridad.
             </p>
             <p className="font-serif text-sm leading-relaxed text-muted-foreground">
               Actualmente cursando{" "}

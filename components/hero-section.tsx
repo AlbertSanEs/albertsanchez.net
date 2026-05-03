@@ -48,17 +48,17 @@ export function HeroSection() {
           <div className="flex flex-col gap-3">
             <TerminalPrompt
               command='whoami'
-              output="Albert Sanchez Escobar"
+              output="Albert Sanchez i Escobar"
               delay={500}
             />
             <TerminalPrompt
               command='cat /etc/role'
-              output="IT Infrastructure & Cybersecurity Analyst"
+              output="Cybersecurity & Infrastructure Specialist"
               delay={2000}
             />
             <TerminalPrompt
               command='uptime --experience'
-              output="+5 years operational | SOC L1 | SysOps | Shift Coordinator"
+              output="DevSecOps | SOC | SysOps | 5+ years"
               delay={3800}
             />
             <TerminalPrompt
@@ -74,12 +74,12 @@ export function HeroSection() {
         <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-muted-foreground">
           <span className="flex items-center gap-1.5">
             <MapPin className="w-3.5 h-3.5 text-terminal-cyan" />
-            Barcelona, Spain
+            Greater Barcelona Metropolitan Area, Spain
           </span>
           <span className="text-border">|</span>
           <span className="flex items-center gap-1.5">
             <Briefcase className="w-3.5 h-3.5 text-terminal-cyan" />
-            Experis / ManpowerGroup
+            Experis Manpower Group S.L.U
           </span>
           <span className="text-border">|</span>
           <span className="text-terminal-green/80">Hybrid</span>
